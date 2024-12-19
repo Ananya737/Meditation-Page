@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+     padding: 0px;
+     box-sizing: border-box; 
+ }
+ /* Navbar */
+ .nav-container{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 300px;
+     background: transparent;
+     height: 80px;
+     /* doubt */
+     position: fixed;
+ }
+ .logo{
+     display: flex; 
+     flex-direction: row;
+     align-items: center;
+     color: white; 
+     gap: 0px; 
+ }
+ .logo a i{
+     color: rgb(224, 180, 47);
+     padding: 20px;
+     font-size: 36px;
+ }
+ .nav{
+     display: flex;
+     gap: 40px;
+ }
+ .nav li{
+     list-style: none;
+     color: white;
+     font-size: 19px;
+ }
+ .nav li a{
+     text-align: none;
+     list-style: none;
+     color: white;
+ }
+ .nav .anchor{
+     text-decoration: none;
+     color: white;
+ }
+ .btn{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 90px;
+ }
+ .btns{
+     display: flex;
+     gap: 30px;
+ }
+ .nav-container .btn .btns label{
+     color:rgb(224, 180, 47) ;
+     font-size: 30px;
+     display: none;
+ }
+input{
+    display: none;
+}
+
+ #btn1{
+     background: rgb(224, 180, 47);
+     color: white;
+     border-radius: 90px;
+    padding: 10px;
+    text-decoration: none;
+ }
+ #btn2{
+     display: flex;
+ background: rgb(65,196,215);
+ border-radius: 90px;
+ padding: 10px;
+ color: white;
+ text-decoration: none;
+ gap: 10px;
+ }
+ /* Hero Section */
+.heroContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items:flex-start;
+background: url(/meditation-2024x1350.jpg) no-repeat center center/cover;
+text-align: start;
+gap: 40px;
+}
+ h1,h4{
+    position: relative;
+top: 0px;
+left: 200px;
+}
+.heroContainer a{
+    position: relative;
+    top: 0px;
+    left: 200px;
+}
+.heroContainer h4{
+    color: rgb(224, 180, 47) ;
+}
+.heroContainer h1{
+    color: white;
+    font-size: 60px;
+}
+.heroContainer a{
+    text-decoration: none;
+    background: white;
+    color: black;
+    border-radius: 90px;
+    padding: 10px;
+    font-weight: 800;
+    align-items: start;
+}
+    .heroContainer a:hover {
+color: rgb(200, 150, 2) ;
+    }
+    #btn1:hover {
+        background-color: rgb(200, 150, 2);
+    }
+    #btn2:hover {
+        background-color: rgb(3, 133, 153);
+    }
+    .nav li :hover {
+        background-color: transparent;
+        color:rgb(224, 180, 47)  ;
+    }
+    /* Section 1 */
+    .section1{
+        background-color: rgb(65,196,215);
+        color: white;
+        
+    }
+@media screen and (max-width: 768px) {
+    .nav-container .btn .nav {
+      flex-direction: column;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: white;
+      height: 100vh;
+      display: none;
+    }
+    .nav-container .btn .nav li a{
+        color: black;
+        
+    }
+    .nav-container .btn .btns label{
+    
+        display: block;
+    }
+    #click:checked ~ .nav-container .btn .nav{
+        display: block;
+    }
+}
